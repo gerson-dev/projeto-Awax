@@ -309,3 +309,121 @@ header{
     font-size: 12px;
     color: #686868;
 }
+
+.section_projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.section_filter ul,li{
+    list-style: none;
+}
+
+.filter ul{
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+    width: 550px;
+    border-radius: 20px;
+    border: 1px solid #cfcfcf;
+    
+}
+
+.filter li{
+    font-size: 12px;
+    color: #212121;
+    padding: 15px;
+    border-left: 1px solid #cfcfcf;
+    padding-left: 10px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ededed;
+    cursor: pointer;
+
+}
+
+.filter li:hover,
+.filter li.active{
+    border-bottom: 3px solid #b28756;
+}
+
+.filter li:first-child{
+    border-left: none;
+    
+}
+
+.section_project--fotos{
+    margin-top: 25px;
+    display: flex;
+    width: 100vw;
+    max-width: 1140px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section_project--foto{
+    width: 280px;
+}
+
+.foto-area{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.foto-area img{
+    width: inherit;  /* o usar inherit o elemento herda o mesmo valor do intem anterior */
+    height: inherit;
+}
+
+.foto-info{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: inherit;
+    height: inherit;
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+
+}
+
+.foto-info h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.foto-info p{
+    line-height: 23px;
+}
+
+.foto-area:hover .foto-info{
+    display: flex;
+    
+}
+
+.section_projects a{
+    background-color: #b28756;
+    padding: 10px 35px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.section_projects a:hover{
+    background-color: #ccc;
+    color: black;
+    transition: 2s;
+}
+
+
+
+
